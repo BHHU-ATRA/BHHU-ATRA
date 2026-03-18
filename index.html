@@ -143,8 +143,9 @@
       by the BHHU-ATRA occurrence database pipeline. The pipeline ingests field records
       collected via KoboToolbox and curated data maintained in Google Drive, transforms
       them into <a href="https://dwc.tdwg.org/" target="_blank">Darwin Core</a> format,
-      and validates them against 8 quality checks before publication to
-      <a href="https://www.gbif.org/" target="_blank">GBIF</a>.
+      validates them against source-data quality checks, and runs a comprehensive
+      <a href="dwc_validation.html">pre-submission validation</a> against GBIF
+      requirements before publication to <a href="https://www.gbif.org/" target="_blank">GBIF</a>.
     </p>
     <p>
       The database currently holds records for amphibians and reptiles of
@@ -170,6 +171,16 @@
       <div class="icon">⚙️</div>
       <h3>Pipeline Run</h3>
       <p>Latest sync metadata, record flow through pipeline stages, KoboToolbox records log, and output file checksums.</p>
+    </a>
+    <a class="report-card" href="dwc_validation.html">
+      <div class="icon">🔬</div>
+      <h3>GBIF Validation</h3>
+      <p>Pre-submission Darwin Core validation: mandatory fields, controlled vocabularies, coordinate ranges, and format checks across all 11,800+ records.</p>
+    </a>
+    <a class="report-card" href="db_fixes.html">
+      <div class="icon">🛠️</div>
+      <h3>Database Fixes</h3>
+      <p>Actionable issues requiring manual correction in the source Excel database: taxon misspellings, vocabulary errors, impossible dates, duplicate IDs, and missing data patterns.</p>
     </a>
   </div>
 
